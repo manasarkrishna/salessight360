@@ -1,0 +1,16 @@
+product_id,product_name,category,unit_price
+PRD01,Starter Plan,Subscription,29
+PRD02,Growth Plan,Subscription,79
+PRD03,Enterprise Plan,Subscription,249
+PRD04,Analytics Add-on,Add-on,39
+PRD05,Onboarding Package,Services,500
+PRD06,Premium Support,Services,150
+PRD07,API Access,Add-on,59
+PRD08,Custom Integration,Services,1200
+PRD09,Team Seats (10-pack),Subscription,199
+PRD10,Data Export Tool,Add-on,25
+PRD11,White-Label Package,Services,899
+PRD12,Compliance Module,Add-on,120
+PRD13,SSO / SAML,Add-on,89
+PRD14,Mobile App License,Subscription,49
+PRD15,Dedicated CSM,Services,650
