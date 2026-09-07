@@ -1,0 +1,5 @@
+stage,count,pct_of_top,drop_off_from_prev,drop_off_rate_pct
+Lead,8000,100.0,0.0,
+Qualified,4993,62.4,3007.0,37.6
+Proposal,2498,31.2,2495.0,50.0
+Closed Won,929,11.6,1569.0,62.8

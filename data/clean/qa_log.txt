@@ -4,4 +4,5 @@ Standardized region text into 5 canonical values; filled 332 missing regions usi
 Normalized created_date / close_date from 3 mixed formats into ISO dates
 Flagged 46 negative and 30 zero deal values as REVIEW (kept, corrected sign, not silently dropped)
 Removed 15 orphan payment rows referencing a non-existent opp_id (saved to data/clean/orphan_payments.csv for audit trail)
-Loaded star schema into data/clean/salessight360.db: 5 dimension tables + fact_opportunities (8000 rows) + fact_payments (929 rows)
+Created star schema DDL in Postgres with PK/FK constraints (open pgAdmin4 -> your db -> Tools -> ERD Tool to see the diagram)
+Loaded star schema into Postgres db 'salessight360': 5 dimension tables + fact_opportunities (8000 rows) + fact_payments (929 rows)

@@ -1,0 +1,21 @@
+channel_name,stage,count,pct_of_entry
+Inbound,Lead,2423,100.0
+Inbound,Qualified,1541,63.6
+Inbound,Proposal,775,32.0
+Inbound,Closed Won,292,12.1
+Outbound,Lead,2391,100.0
+Outbound,Qualified,1483,62.0
+Outbound,Proposal,745,31.2
+Outbound,Closed Won,269,11.3
+Partner,Lead,1218,100.0
+Partner,Qualified,757,62.2
+Partner,Proposal,374,30.7
+Partner,Closed Won,136,11.2
+Referral,Lead,1200,100.0
+Referral,Qualified,736,61.3
+Referral,Proposal,370,30.8
+Referral,Closed Won,134,11.2
+Web Signup,Lead,768,100.0
+Web Signup,Qualified,476,62.0
+Web Signup,Proposal,234,30.5
+Web Signup,Closed Won,98,12.8
