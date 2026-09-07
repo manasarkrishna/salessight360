@@ -1,0 +1,7 @@
+Loaded raw rows -> reps:40 products:15 opportunities:8160 payments:944
+Removed 160 duplicate opportunity rows (exact opp_id dupes)
+Standardized region text into 5 canonical values; filled 332 missing regions using the rep's home region
+Normalized created_date / close_date from 3 mixed formats into ISO dates
+Flagged 46 negative and 30 zero deal values as REVIEW (kept, corrected sign, not silently dropped)
+Removed 15 orphan payment rows referencing a non-existent opp_id (saved to data/clean/orphan_payments.csv for audit trail)
+Loaded star schema into data/clean/salessight360.db: 5 dimension tables + fact_opportunities (8000 rows) + fact_payments (929 rows)
