@@ -1,4 +1,4 @@
--- =============================================================================
+Since this will be considered, will that effect the percentage? How much supposed to score like apart from the percentile out of the doctor so that I can make into this percentile person-- =============================================================================
 -- SalesSight 360 — Day 3: Core KPI Layer (SQL)
 -- Target: Postgres (run via pgAdmin4 Query Tool, or via day3_run_kpis.py)
 -- =============================================================================
