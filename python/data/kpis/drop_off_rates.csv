@@ -1,0 +1,16 @@
+channel_name,from_stage,to_stage,drop_off_rate_pct
+Inbound,Lead,Qualified,36.4
+Inbound,Qualified,Proposal,49.7
+Inbound,Proposal,Closed Won,62.3
+Outbound,Lead,Qualified,38.0
+Outbound,Qualified,Proposal,49.8
+Outbound,Proposal,Closed Won,63.9
+Partner,Lead,Qualified,37.8
+Partner,Qualified,Proposal,50.6
+Partner,Proposal,Closed Won,63.6
+Referral,Lead,Qualified,38.7
+Referral,Qualified,Proposal,49.7
+Referral,Proposal,Closed Won,63.8
+Web Signup,Lead,Qualified,38.0
+Web Signup,Qualified,Proposal,50.8
+Web Signup,Proposal,Closed Won,58.1

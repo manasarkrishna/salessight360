@@ -1,0 +1,15 @@
+check,status,detail
+fact_opportunities.rep_id -> dim_rep,PASS,(0 orphan rows)
+fact_opportunities.product_id -> dim_product,PASS,(0 orphan rows)
+fact_opportunities.region_id -> dim_region,PASS,(0 orphan rows)
+fact_payments.opp_id -> fact_opportunities,PASS,(0 orphan rows)
+fact_opportunities.opp_id is unique,PASS,(0 duplicated ids)
+fact_payments.order_id is unique,PASS,(0 duplicated ids)
+No negative deal values,PASS,(min=0.00)
+No absurd outlier deal values (< $50k),PASS,(max=9568.38)
+"All win rates fall within [0, 1]",PASS,(0 regions out of range)
+No opportunity closes before it was created,PASS,(0 rows)
+Closed-Won deal_value matches its payment amount,PASS,(0 mismatches)
+No region has a wildly outsized share of volume (max < 3x min),PASS,"(min=1002, max=2049)"
+Funnel stage counts are monotonically non-increasing,PASS,
+Pipeline coverage ratio is in a sane range (0.5x - 10x historical won),PASS,(ratio=7.43x)

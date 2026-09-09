@@ -1,0 +1,6 @@
+region_name,weighted_forecast,monthly_target,coverage_ratio,at_risk
+North,115595.58,12265.2,9.42,False
+South,150152.45,15699.21,9.56,False
+West,239197.64,23501.29,10.18,False
+East,257677.14,21084.91,12.22,False
+Central,226073.34,15902.9,14.22,False

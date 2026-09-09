@@ -1,0 +1,6 @@
+region_name,open_deal_count,naive_pipeline_value,weighted_forecast,overstatement_pct
+East,1525,887523.5,257677.14,71.0
+West,1587,917234.9,239197.64,73.9
+Central,1392,807289.99,226073.34,72.0
+South,929,524543.66,150152.45,71.4
+North,772,440210.07,115595.58,73.7

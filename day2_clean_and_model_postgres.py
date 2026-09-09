@@ -173,6 +173,19 @@ fact_opps["created_date_id"] = fact_opps["created_date_id"].astype("Int64")
 fact_payments = payments.copy()
 fact_payments["payment_date_id"] = fact_payments["payment_date"].map(date_id_map)
 fact_payments = fact_payments[["order_id", "opp_id", "amount", "payment_status", "payment_date_id"]]
+
+# --- BUG FIX (caught by Day 7 QA checkpoint) ---
+# Day 1 generated payment amount as a direct copy of the RAW (pre-cleaning) deal_value.
+# Day 2's sign-correction on deal_value (step 4 above) never propagated to this copy,
+# so a handful of payments retained the original negative sign while their matching
+# opportunity's deal_value had already been corrected. Fix by re-deriving amount from
+# the cleaned deal_value rather than trusting the stale copy.
+_clean_values = fact_opps.set_index("opp_id")["deal_value"]
+mismatch_before = (fact_payments["opp_id"].map(_clean_values) - fact_payments["amount"]).abs()
+n_fixed = (mismatch_before > 0.01).sum()
+fact_payments["amount"] = fact_payments["opp_id"].map(_clean_values)
+log(f"QA fix: corrected {n_fixed} fact_payments.amount rows that still carried the "
+    f"pre-cleaning sign (amount now derived from cleaned deal_value, not a stale copy)")
 fact_payments["payment_date_id"] = fact_payments["payment_date_id"].astype("Int64")
 
 # ---------------------------------------------------------------------------

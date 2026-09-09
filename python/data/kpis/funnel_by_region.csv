@@ -1,0 +1,21 @@
+region_name,stage,count,pct_of_entry
+Central,Lead,1801,100.0
+Central,Qualified,1116,62.0
+Central,Proposal,567,31.5
+Central,Closed Won,208,11.5
+East,Lead,1942,100.0
+East,Qualified,1212,62.4
+East,Proposal,620,31.9
+East,Closed Won,229,11.8
+North,Lead,1002,100.0
+North,Qualified,632,63.1
+North,Proposal,324,32.3
+North,Closed Won,124,12.4
+South,Lead,1206,100.0
+South,Qualified,767,63.6
+South,Proposal,383,31.8
+South,Closed Won,133,11.0
+West,Lead,2049,100.0
+West,Qualified,1266,61.8
+West,Proposal,604,29.5
+West,Closed Won,235,11.5
