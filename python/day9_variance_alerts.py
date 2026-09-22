@@ -37,7 +37,7 @@ from sqlalchemy import create_engine
 
 PG_CONFIG = {
     "user": "postgres",
-    "password": "postman123",      # <-- change to your actual password
+    "password": "password",      # <-- change to your actual password
     "host": "localhost",
     "port": "5432",
     "dbname": "salessight360",

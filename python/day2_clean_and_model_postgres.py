@@ -27,7 +27,7 @@ from sqlalchemy import create_engine, text
 # ---------------------------------------------------------------------------
 PG_CONFIG = {
     "user": "postgres",
-    "password": "postman123",      # <-- change to your actual password
+    "password": "password",      # <-- change to your actual password
     "host": "localhost",
     "port": "5432",
     "dbname": "salessight360",   # <-- create this database first in pgAdmin4
